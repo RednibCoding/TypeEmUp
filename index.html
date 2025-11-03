@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeEmUp - Space Typing Shooter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="audio-toggle" id="audioToggle" title="Toggle Audio">
+        <span class="audio-icon" id="audioIcon">🔊</span>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>// TYPEEMUP SPACE SHOOTER //</h1>
+            <div class="stats">
+                <span id="round">ROUND: 1</span>
+                <span id="score">SCORE: 0</span>
+                <span id="health">HULL: 100%</span>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="input-area">
+            <span class="prompt">&gt;</span>
+            <input type="text" id="wordInput" autocomplete="off" spellcheck="false" placeholder="Type enemy words to shoot...">
+        </div>
+        
+        <div class="game-over hidden" id="gameOver">
+            <div class="game-over-content">
+                <h2>// GAME OVER //</h2>
+                <p id="finalScore">FINAL SCORE: 0</p>
+                <p id="finalStats"></p>
+                <p class="restart-hint">Press SPACE to restart</p>
+            </div>
+        </div>
+        
+        <div class="round-complete hidden" id="roundComplete">
+            <div class="round-complete-content">
+                <h2>// ROUND COMPLETE //</h2>
+                <p id="roundScore">SCORE: 0</p>
+                <p id="roundStats"></p>
+                <p id="roundBonus"></p>
+                <p class="continue-hint">Press SPACE to continue</p>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
