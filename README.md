@@ -4,6 +4,10 @@ A fast-paced space shooter game where you destroy enemies by typing their words 
 
 ![](/screenshot.png)
 
+[**> Try it out <**](https://rednibcoding.github.io/TypeEmUp/)
+
+[**> Video on Youtube <**](https://www.youtube.com/watch?v=s0DlEDYixeE)
+
 ## How to Play
 
 ### Starting the Game
